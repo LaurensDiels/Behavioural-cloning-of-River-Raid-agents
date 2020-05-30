@@ -1,4 +1,4 @@
-from typing import Dict, List, Tuple, Iterator, Union, Callable
+from typing import Dict, List, Tuple, Union, Callable
 import keras
 import time
 import math

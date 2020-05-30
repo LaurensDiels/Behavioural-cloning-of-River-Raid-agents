@@ -618,7 +618,6 @@ def analyze_fixed_frames_dict(frames_dict: Dict[str, Dict[int, List[numpy.ndarra
 
 
 if __name__ == "__main__":
-    """
     RL_BC_agents = load_RL_BC_agents()
     compare_distributions(RL_BC_agents, "RL", True,
                           os.path.join(MODEL_DISTRIBUTION_COMPARISON_FOLDER, "RLvsBCEpisodes_Distr"),
@@ -641,7 +640,7 @@ if __name__ == "__main__":
     compare_score_and_time_alive_human(True,
                                        os.path.join(MODEL_SCORES_TIME_ALIVE_COMPARISON_FOLDER, "HumanvsBCs_STA"),
                                        True)
-    """
+
     compare_fixed_frame_variability(True,
                                     os.path.join(AGENTS_VARIABILITY_COMPARISON_FOLDER, "AgentVariability"),
                                     True, 

@@ -1,5 +1,4 @@
 import numpy
-import compress_pickle
 import pygame
 from pygame import QUIT
 

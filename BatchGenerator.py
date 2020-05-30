@@ -5,13 +5,9 @@ import time
 import compress_pickle
 import copy
 
-from AtariActions import NB_ACTIONS
-
 from GlobalSettings import *
 
 PRINT_DEBUG_PREFIX = "|\t"
-NB_CLASSES = NB_ACTIONS
-
 
 class BatchGenerator:
     """Used to sequentially load saved data and return batches."""

@@ -6,20 +6,17 @@
 import math
 import sys
 import random
-import time
 import pickle
 from typing import Callable, List
 
 import compress_pickle
 import numpy
 
-import tensorflow as tf
 import keras
 from keras import regularizers
-from keras.models import Model, Sequential
+from keras.models import Model
 from keras.applications.vgg16 import VGG16
 from keras.layers import Input, Conv2D, Dense, Dropout, Flatten, MaxPooling2D, BatchNormalization
-from keras.utils import multi_gpu_model
 from keras import utils
 
 import hyperopt
@@ -695,11 +692,13 @@ def create_model_method_load_RLBC_model_reset_top_finetune(input_shape, learning
 
     return model
 
-if __name__ == '__main__':
 
-    #tune_custom_model_a_hyperparameters_RL()  # -> now set CUSTOM_A_TUNED_HYPERPARAMETERS_RL_BC__... in GlobalSettings.py
-    #for nb_episodes in RL_BC_VARYING_NB_EPISODES_NBS:
-    #    train_tuned_custom_model_a_RL_varying_nb_of_episodes(nb_episodes)
+if __name__ == '__main__':
+    pass
+
+    # tune_custom_model_a_hyperparameters_RL()  # -> now set CUSTOM_A_TUNED_HYPERPARAMETERS_RL_BC__... in GlobalSettings.py
+    # for nb_episodes in RL_BC_VARYING_NB_EPISODES_NBS:
+    #     train_tuned_custom_model_a_RL_varying_nb_of_episodes(nb_episodes)
 
     #train_fixed_tuned_custom_model_b_RL_2000_episodes()
 
@@ -712,26 +711,4 @@ if __name__ == '__main__':
     #train_tuned_custom_model_a_human_transfer_learning_reset_top_rest_frozen()
     #train_tuned_custom_model_a_human_transfer_learning_reset_top_finetune()
 
-    #model = create_custom_model_d((210, 160, 3), 1, True)
-    #print(len(model.layers))
-
-
-    (training_files, validation_files, test_files) = \
-        BatchLearner.create_random_training_validation_test_split(
-            0, 200, 8, 1, 1)
-    train_model(FIXED_RL_EPISODES_FOLDER, 8, training_files[0:5], validation_files, test_files, create_custom_model_a,
-                32, 25, 5, 10, 1.3e-4, 1e-3, "Test", "Data/TestBC", False, False, True, False,
-                "Checkpoint", "Checkpoint", True, True, True)
-    
-
-    """
-    resume_training("Test", "Data/TestBC", "Checkpoint", "Checkpoint", False, False, False)
-
-    bl = BatchLearner.load_saved_batch_learner("Data/TestBC/Checkpoint/Checkpoint", False, False)
-    bl.make_history_plot("a.svg",use_smoothing=True)
-    bl.make_history_plot("b.svg",use_smoothing=False)
-
-
-    #a = 123
-    """
 

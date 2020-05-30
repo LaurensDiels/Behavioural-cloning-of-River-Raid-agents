@@ -1,6 +1,3 @@
-
-import os
-
 from RLTrainer import SimpleRLTrainer, GreedyRLTrainer
 from GlobalSettings import *
 

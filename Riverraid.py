@@ -6,7 +6,7 @@ import sys
 
 from GlobalSettings import *
 
-from InputHandler import HumanInputHandler, RandomInputHandler, KerasModelInputHandler, KerasGymModelInputHandler, ReplayInputHandler
+from InputHandler import HumanInputHandler, RandomInputHandler, KerasModelInputHandler, KerasGymModelInputHandler
 from VisualizationHandler import NoVisualizer, NoSleepVisualizer, MaxFPSVisualizer
 from Episode import Episode
 from State import State
