@@ -23,12 +23,14 @@ import hyperopt
 from hyperopt import fmin, tpe, hp
 from hyperopt import Trials
 
+from AtariActions import NB_ACTIONS
 from GlobalSettings import *
 from DataLoader import EpisodeDataLoader
-from BatchGenerator import NB_CLASSES
 from BatchLearner import BatchLearner
 from BatchLearnerSmoothingOptions import BatchLearnerSmoothingOptions
 
+
+NB_CLASSES = NB_ACTIONS
 
 SEED = 31415
 numpy.random.seed(SEED)  # For reproducibility
