@@ -1,4 +1,4 @@
-# Behavioural-cloning-of-River-Raid-agents
+# Behavioural cloning of River Raid agents
 
 All code was written by Laurens Diels in the context of his Master's thesis in Artificial Intelligence (KU Leuven, 2019-2020).
 
