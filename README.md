@@ -1,6 +1,6 @@
 # Behavioural cloning of River Raid agents
 
-All code was written by Laurens Diels in the context of his Master's thesis in Artificial Intelligence (KU Leuven, 2019-2020).
+All code was written by Laurens Diels in the context of his Master's thesis in Artificial Intelligence (KU Leuven, 2019-2020). The dissertation is also available here as a .pdf file.
 
 In order for CompareModels.py to run properly, KS2D.py from https://github.com/Gabinou/2DKS (Gabriel Taillon) is also required.
 
